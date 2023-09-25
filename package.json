@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "start": "browser-sync start --config bs-config.js"
+    },
+    "devDependencies": {
+        "browser": "^0.2.6",
+        "browser-sync": "^2.29.3"
+    }
+}
