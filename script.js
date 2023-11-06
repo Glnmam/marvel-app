@@ -1,5 +1,5 @@
 // retrieve data from json file
-fetch('../characters.json')
+fetch('../data/characters.json')
 .then((response) => {
     console.log(response);
     return response.json();
