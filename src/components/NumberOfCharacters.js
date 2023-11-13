@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 const charact = require('../data/characters.json');
 
 
-export default function NumberOfCharacters(){
-    if (charact.length === 0) {
-      return "Il n'y a pas de characters";
-    }
-    return ('Nombre de persos :' + charact.length);
-  
+export function NumberOfCharacters({ characters = [] }) {
+  if (characters.length === 0) {
+    return <p>There is no characters</p>;
   }
+
+  return <p>There is {characters.length} characters</p>;
+}  
