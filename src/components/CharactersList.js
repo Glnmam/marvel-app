@@ -1,15 +1,15 @@
+import { Link } from "react-router-dom";
 
-import '../App.css';
-import React, { useState } from 'react';
-
-const charact = require('../data/characters.json');
-
-export default function CharactersList() {
+export function CharactersList({ characters = [] }) {
     return (
-      <ul>
-        {charact.map((character, index) => (
-          <li key={index}>{character.name}</li>
-        ))}
-      </ul>
-    )
-  }
+        <ul id="characters">
+            {characters.map((character) => (
+                <li key={character.id}>
+                    <Link to={`/characters/${character.id}`}>
+                        {character.name}
+                    </Link>
+                </li>
+            ))}
+        </ul>
+    );
+}
