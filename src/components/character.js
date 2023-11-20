@@ -1,4 +1,4 @@
-import '../App.css';
+
 import React, { useState } from 'react';
 
 const charact = require('../data/characters.json');
