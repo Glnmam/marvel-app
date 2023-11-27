@@ -1,7 +1,5 @@
-import '../App.css';
-import React, { useState } from 'react';
 
-const charact = require('../data/characters.json');
+import React, { useState } from 'react';
 
 export default function CharactImg({ charact = [] }) {
     const [selectedCharacter, setSelectedCharacter] = useState(0);
