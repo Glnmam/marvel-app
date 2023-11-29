@@ -23,7 +23,7 @@ const CharacterDetailPage = () => {
                 </div>
                 <div style={{flex: '50%'}}>
                     <h3>Using Recharts</h3>
-                    {/* <RechartsPieChart data={character.capacities} /> */}
+                    <RechartsPieChart data={character.capacities} />
                 </div>
             </div>
         </>
