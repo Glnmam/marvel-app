@@ -35,6 +35,7 @@ _Projet but SD_
 
 ```mermaid
 sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    John-->>Alice: Great!
-    Alice-)John: See you later!
+    Home->>character: select a character
+    Home-->>about: infos page
+    Home-->>contact: infos dev
+```
