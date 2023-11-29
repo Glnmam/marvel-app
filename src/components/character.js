@@ -1,11 +1,7 @@
-<<<<<<< HEAD
+
 
 import React, { useState } from 'react';
 
-=======
-import React, { useState } from 'react';
-
->>>>>>> a456bde09e775c4b32d51c25d2c22378663beb15
 export default function CharactImg({ charact = [] }) {
     const [selectedCharacter, setSelectedCharacter] = useState(0);
   
