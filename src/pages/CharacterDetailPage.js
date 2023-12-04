@@ -1,4 +1,5 @@
 import React from 'react';
+import { format} from 'date-fns';
 
 import { useLoaderData } from 'react-router';
 import CharacterDetail from '../components/CharacterDetail';
@@ -14,7 +15,7 @@ const CharacterDetailPage = () => {
     return (
         <>
             <CharacterDetail character={character} />
-
+            <strong>{format(new Date(character.modified), "MM/dd/yyyy")}</strong>
             <h2>Capacities</h2>
             <div style={{ display: 'flex'}}>
                 <div style={{flex: '50%'}}>

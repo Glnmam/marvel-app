@@ -54,6 +54,10 @@ describe('CharacterDetailPage', () => {
         const pElement = screen.getByText(character.description);
         expect(pElement).toBeInTheDocument();
 
+        // expect to have a the character date
+        const dElement = screen.getByText(format(new Date(character.modified), "MM/dd/yyyy"));
+        expect(dElement).toBeInTheDocument();
+
         // expect to have a heading with the text "Capacities"
         const h2CapacitiesElement = screen.getByRole('heading', { level: 2, name: 'Capacities' });
         expect(h2CapacitiesElement).toBeInTheDocument();

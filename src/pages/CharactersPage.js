@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CharactersList } from "../components/CharactersList";
 import { NumberOfCharacters } from "../components/NumberOfCharacters";
-
+import { format} from 'date-fns';
 import { useLoaderData } from 'react-router';
 import { useSearchParams } from 'react-router-dom';
 
@@ -40,7 +40,8 @@ const CharactersPage = () => {
                 <option value="asc">Ascending</option>
                 <option value="desc">Descending</option>
             </select>         
-            <CharactersList characters={characters} />
+            <CharactersList characters={characters} /> 
+            <small>{characters.modified}</small>
             <br />
             <NumberOfCharacters characters={characters} />
         </>
